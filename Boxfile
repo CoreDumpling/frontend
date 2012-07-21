@@ -12,5 +12,4 @@ web1:
         - mysql
         - pdo_mysql
         - exif
-        - oauth
     php_upload_max_filesize: 16M
