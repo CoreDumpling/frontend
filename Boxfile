@@ -1,0 +1,16 @@
+web1:
+    name: frontend
+    shared_writable_dirs:
+        - /src/configs/generated
+    document_root: /src/html
+    php_extensions:
+        - imagick
+        - gmagick
+        - gd
+        - mcrypt
+        - curl
+        - mysql
+        - pdo_mysql
+        - exif
+        - oauth
+    php_upload_max_filesize: 16M
