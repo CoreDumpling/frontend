@@ -2,6 +2,9 @@ web1:
     name: frontend
     shared_writable_dirs:
         - /src/configs/generated
+        - /src/userdata
+        - /src/userdata/configs
+        - /src/html/assets/cache
     document_root: /src/html
     php_extensions:
         - imagick
