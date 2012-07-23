@@ -256,7 +256,7 @@ class Credential extends BaseModel
     $headers = $this->utility->getAllHeaders();
     foreach($headers as $name => $header)
     {
-      if(stripos($name, 'authorization') === 0)
+      if(stripos($name, 'authorization') === 0 && $header)
       {
         $parameters = explode(',', $header);
         foreach($parameters as $parameter)
