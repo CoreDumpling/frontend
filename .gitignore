@@ -6,12 +6,12 @@
 .idea
 
 # Useful files which should never be committed
+logs
 src/configs/override.ini
 src/configs/generated/*
 src/html/photos/**/*
 src/html/assets/themes/*
 src/html/assets/cache
-src/logs
 src/plugins/*
 src/userdata/**/*
 !default
