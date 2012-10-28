@@ -983,7 +983,7 @@ class ApiPhotoController extends ApiBaseController
     }
 
     // adjust height/width values based on rotation see #484
-    if($photo['rotation'] == '90' || $photo['rotation'] == '270')
+    if(isset($photo['rotation']) && ($photo['rotation'] == '90' || $photo['rotation'] == '270'))
       list($photo['width'], $photo['height']) = array($photo['height'], $photo['width']);
     return $photo;
   }
